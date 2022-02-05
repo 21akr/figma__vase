@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Libre+Franklin&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart::after {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  content: "";
+  display: block;
+  height: 34px;
+  width: 1px;
+  color: black;
+}
+
+.cart__img {
+  margin: 0px 6px 0px 12px;
+}
+
+nav ul li {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  display: flex;
+  margin: 0px 16px 0 16px;
+}
+
+.red__text {
+  color: #ac1313;
+}
+
+.logo {
+  height: 32px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  opacity: 80%;
+}
+
+.nav__text {
+  font-size: 11px;
+}
+
+/* AFTER NAV DIV */
+.after__nav__parent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url(../images/after\ nav\ bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.unique__main {
+  margin-left: -670px;
+}
+
+.pompeo__text {
+  color: #d77474;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6c6c6c;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.and {
+  width: 53px;
+}
+
+.btn {
+  margin-top: 36px;
+  background: #ac1313;
+  color: white;
+  padding: 16px;
+  width: 160px;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.after__nav__vase {
+  width: 786px;
+  height: 420px;
+}
+
+/* CIRCLES */
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #e4b366;
+  border: 25px solid rgba(0, 0, 0, 0.04);
+  transform: scale(0.5);
+  transition: 0.7s;
+}
+
+.circle__item:nth-child(2) {
+  background: #f05b10;
+}
+
+.circle__item:nth-child(3) {
+  background: #a21010;
+}
+
+.circle__text {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 10px;
+}
+
+.circle__item:hover {
+  transform: scale(1) rotateZ(360deg);
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d77474;
+  font-size: 13px;
+}
+
+.head__pp {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.head__text {
+  margin: 60px 0px 20px 0px;
+}
+
+.mini {
+  font-size: 13px;
+  height: 90px;
+  width: 490px;
+  color: #6c6c6c;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.bot__texts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.bot__text {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+  .bot__text {
+    font-size: 24px;
+  }
+
+  .mini {
+    font-size: 11px;
+    height: 200px;
+    width: 300px;
+  }
+
+  .circle__item {
+    height: 160px;
+    width: 160px;
+  }
+
+  .head__pp {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 730px) {
+  .mini {
+    height: 300px;
+    width: 200px;
+  }
+
+  .bot__text {
+    font-size: 18px;
+  }
+}
+
+/* AFTER CIRCLE DIV */
+.parent__vases {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.lorem__ipsum {
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+}
+
+.lorem__ipsum p {
+  margin-top: 24px;
+}
+
+.part {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 350px;
+}
+
+.background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 220px;
+  width: 500px;
+  background: #f5f5f5;
+}
+
+.vase {
+  top: -50%;
+  position: absolute;
+  width: 250px;
+  height: 509px;
+}
+
+.lorem {
+  font-size: 13px;
+  width: 380px;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 80%;
+}
+
+.right__vase {
+  width: 360px;
+  height: 430px;
+}
+
+/* POTTERY COLLECTION */
+.collection__parent {
+  margin-top: 700px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mini__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #d77474;
+}
+
+.main__title {
+  margin-bottom: 46px;
+  font-size: 38px;
+}
+
+.collection {
+  display: flex;
+  flex-direction: row;
+}
+
+.collection__blocks {
+  margin: 0px 12px 30px 0px;
+}
+
+.same {
+  width: 370px;
+  height: 494px;
+}
+
+.name {
+  margin-top: 16px;
+  color: #6c6c6c;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.price {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+/* PRE-LAST DIV */
+.pre__last__parent {
+  /* display: flex; */
+  align-items: center;
+  width: 100%;
+  background: url(../images/pre__last__div\ bg.svg) no-repeat;
+}
+
+.pre__last__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  margin-top: 900px;
+  margin-left: 100px;
+}
+
+a {
+  font-weight: 700;
+  color: #ac1313;
+}
+
+/* LATEST DIV */
+.latest__div__parent {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin: 200px 0px 40px 0px;
+}
+
+.input {
+  padding: 13px;
+  /* height: 40px; */
+  width: 300px;
+  border: 1px rgba(128, 128, 128, 0.289) solid;
+}
+.black__btn {
+  background: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 12px;
+  width: 200px;
+}
